@@ -1,0 +1,38 @@
+
+Algoritmo sin_titulo
+	Definir tarifa Como Real
+	definir horas Como Entero
+	Definir dia_laboral, festivo, finde Como entero
+	definir recargo Como Logico
+	
+	mostrar "seleccione dia trabajado"
+	mostrar "1. dia_laboral"
+	Mostrar "2. finde"
+	Mostrar "3. festivo"
+	Leer opcion 
+	
+	Mostrar "ingrese horas"
+	Leer horas
+	
+	dia_laboral = 5000
+	finde = 8000
+	dia_festivo = 10000
+	
+	
+	segun opcion hacer
+		
+		1: resultado <-- horas * dia_laboral
+				
+		2: resultado <-- horas * finde
+			
+		3: resultado <-- horas * dia_festivo
+	FinSegun
+	
+	si horas mod 2 <> 0 Entonces
+		resultado <-- resultado * 1.20
+	FinSi
+	
+	
+	Mostrar "total a pagar:", "$", resultado
+	
+FinAlgoritmo

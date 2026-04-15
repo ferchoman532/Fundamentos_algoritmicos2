@@ -1,0 +1,25 @@
+Proceso CarritoCompras
+    Definir total, precio Como Real
+    Definir continuar Como Cadena
+    
+    total <- 0
+    
+    continuar <- "si"
+    
+    Mientras continuar = "si" Hacer
+        Escribir "Ingrese el precio del producto:"
+        Leer precio
+        
+        total <- total + precio
+        
+        Escribir "ï¿½Desea agregar otro producto? (si/no)"
+        Leer continuar
+    FinMientras
+    
+    Si total > 500 Entonces
+        total <- total - (total * 0.15)
+        Escribir "Se aplicï¿½ descuento VIP del 15%"
+    FinSi
+    
+    Escribir "El total a pagar es: ", total
+FinProceso
