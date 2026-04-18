@@ -32,7 +32,7 @@ Algoritmo sin_titulo
 		resultado <-- resultado * 1.20
 	FinSi
 	
-	
+	mostrar "se aplica recarga de 20% si la can5tidad de horas ingresada es inpar"
 	Mostrar "total a pagar:", "$", resultado
 	
 FinAlgoritmo
